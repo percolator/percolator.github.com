@@ -1,0 +1,9 @@
+---
+layout: default
+title: Download and Install
+categories: all
+terminal_pres: true
+---
+The latest releases of Percolator can be found at among the "downloads":http://github.com/percolator/percolator/downloads. There you may find package for Linux and compiled executables for Win32. Source bundles are available to build Percolator from scratch if you are running a different system or if you do not have superuser privileges.
+
+For instructions on installing and building Percolator on your machine, please refer to the "README file":http://github.com/percolator/percolator/raw/master/README shipped with the source code.

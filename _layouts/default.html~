@@ -1,0 +1,109 @@
+---
+sidebar_cats:
+- setup
+- troubleshooting
+- repos
+- collaborating
+- everyday_git
+- git_ninjutsu
+- deploying
+- mac
+- windows
+- linux
+- other
+- site_policy
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Help.GitHub - {{ page.title }}</title>
+    <link href="http://github.com/stylesheets/bundle_common.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="http://github.com/stylesheets/bundle_github.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+  </head>
+
+  <body>
+    {% if page.main_category %}
+      <script type="text/javascript">var main_category = "{{ page.main_category }}"</script>
+    {% else %}
+      {% if page.categories %}
+        <script type="text/javascript">var main_category = "{{ page.categories }}"</script>
+      {% endif %}
+    {% endif %}
+    <div id="main">
+      <div id="header" class="basic">
+        <div class="site">
+          <div class="logo boring">
+            <a href="/"><img src="/images/help.github.png" alt="github learn logo" /></a>
+          </div>
+          <div class="topsearch">
+            <ul class="nav logged_out">
+              <li><a href="http://gitref.org/">Git Reference</a></li>
+              <li><a href="http://github.com/github/help.github.com#readme">Contribute</a></li>
+              <li><a href="http://support.github.com/">Support</a></li>
+              <li><a href="http://github.com/">Back to GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="content" class="site">
+        <div id="guides">
+          <div class="guide">
+            <div class="main">
+              <h1>{{ page.title }}</h1>
+
+              <div class="wikistyle">
+                {{ content }}
+              </div>
+            </div>
+
+            <div class="sidebar">
+              {% for cat in (page.sidebar_cats) %}
+                <h3>{{ cat | replace:'_',' ' | capitalize }}</h3>
+                  <ul id="categories">
+                    {% for post in site.posts reversed %}{% if post.categories contains cat %}
+                      {% if page.title == post.title %}
+                        <li>{{ page.title }}</li>
+                      {% else %}
+                        <li><a href="{{ post.url }}" id="{{ cat }}">{{ post.title }}</a></li>
+                      {% endif %}
+                    {% endif %}{% endfor %}
+                  </ul>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="site">
+
+        <div class="info">
+          <div class="links">
+            <a href="http://github.com/blog"><b>Blog</b></a> |
+            <a href="http://support.github.com/">Support</a> |
+            <a href="http://github.com/training">Training</a> |
+            <a href="http://github.com/contact">Contact</a> |
+            <a href="http://develop.github.com">API</a> |
+            <a href="http://status.github.com">Status</a> |
+            <a href="http://twitter.com/github">Twitter</a> |
+            <a href="http://gitref.org">Learn</a> |
+            <a href="http://github.com/security">Security</a>
+          </div>
+          <div class="company">
+           &copy;
+            {{ site.time | date: "%Y" }}
+            GitHub Inc.
+            All rights reserved.
+           | <a href="http://github.com/site/terms">Terms of Service</a> | <a href="http://github.com/site/privacy">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

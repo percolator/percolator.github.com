@@ -1,0 +1,26 @@
+---
+layout: default
+title: Publications
+categories: all
+terminal_pres: true
+---
+Percolator was firstly published in 
+<blockquote>
+"Lukas Käll":http://kaell.org/, Jesse Canterbury, Jason Weston, "William Stafford Noble":http://noble.gs.washington.edu and "Michael J. MacCoss":http://proteome.gs.washington.edu.<br/>
+"Semi-supervised learning for peptide identification from shotgun proteomics datasets":http://www.ncbi.nlm.nih.gov/pubmed/17952086<br/>
+Nature Methods 4:923 - 925, November 2007 
+</blockquote>
+
+Pecolator's _q_-value calculation method is described in
+<blockquote>
+"Lukas Käll":http://kaell.org/, "John D. Storey":http://genomine.org, "Michael J. MacCoss":http://proteome.gs.washington.edu and "William Stafford Noble":http://noble.gs.washington.edu<br/>
+"Assigning confidence measures to peptides identified by tandem mass spectrometry":http://www.ncbi.nlm.nih.gov/pubmed/18067246<br/>
+Journal of Proteome Research, 7(1):29-34, January 2008 
+</blockquote>
+
+and percolator's posterior error probability calculation method is described in
+<blockquote>
+"Lukas Käll":http://kaell.org/, "John D. Storey":http://genomine.org and "William Stafford Noble":http://noble.gs.washington.edu<br/>
+"Nonparametric estimation of posterior error probabilities associated with peptides identified<br/> by tandem mass spectrometry":http://www.ncbi.nlm.nih.gov/pubmed/18689838<br/>
+Bioinformatics, 24(16):i42-i48, August 2008
+</blockquote>

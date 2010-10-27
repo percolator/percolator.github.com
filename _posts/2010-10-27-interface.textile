@@ -1,0 +1,26 @@
+---
+layout: default
+title: Interface
+categories: all
+terminal_pres: true
+---
+h2. SQT-files
+
+The main input format to percolator are "sqt-files":http://www.ncbi.nlm.nih.gov/pubmed/15317041, the default output from _i.e._ "Crux":http://noble.gs.washington.edu/proj/crux. You may also convert "Bioworks":http://www.thermo.com/bioworks/ Sequest output files (.srf-files) to SQT Files using John Prince's tool srf2sqt which is found at "github":http://github.com/jtprince/ms-sequest alternatively if "gem":http://rubygems.org/ is installed you may just get the method using the command
+<pre><code>$ gem install ms-sequest
+</code></pre>
+
+h2. Mascot
+
+For users of "Mascot":http://matrixscience.com, "Markus Brosch":http://www.sanger.ac.uk/Teams/Team17/team.shtml at Sanger institute have written a Mascot file parser for percolator, "mascot-percolator":http://www.sanger.ac.uk/Software/analysis/MascotPercolator/
+
+Percolator is provided as a part of "Mascot Server":http://matrixscience.com version 2.3.
+
+h2. Tab-delimited fileformat
+
+For other platforms, one may convert scores into a tab-delimited format. Input files are given as a tab delimited format in the form of rows (one row per PSM):
+<small><pre><code>id <tab> label <tab> feature1 <tab> ... <tab> featureN <tab> peptide <tab> proteinId1 <tab> .. <tab> proteinIdM 
+</code></pre></small>
+Labels are interpreted as <code>1</code> for target PSMs, and <code>-1</code> for decoy PSMs.
+When the <code>--doc</code> option the first and second feature (third and fourth column) should contain the 
+retention time and difference between observed and calculated mass/charge. You may download example files for this format following this "link":http://noble.gs.washington.edu/proj/percolator/data/yeast-01.tab.gz

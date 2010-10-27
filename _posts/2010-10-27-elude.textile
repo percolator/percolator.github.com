@@ -1,0 +1,39 @@
+---
+layout: default
+title: Elude
+categories: all
+terminal_pres: true
+---
+h2. Introduction
+
+Elude is a package designed to predict peptide retention times in reversed-phase liquid chromatography. Depending on the amount of training peptides available, Elude can be used to train a new predictor for the conditions at hand or calibrate an existing model from a library. Elude is part of the Percolator software package and distributed with the later one.
+
+h2. Download and Install
+
+At the moment only the latest snapshot of the development can be downloaded by running one of the scripts build_ubuntu_eclipse_64bit.sh or build_ubuntu_eclipse_32bit.sh, depending whether you have a 32 or 64 bit machine. Both scripts are reachable via this page from the Source tab, percolator/documentation. Note that the build requires Ubuntu 10.04 installed on your computer.
+
+Once the installation completed, a directory called bin will be created including the elude executable.
+
+h2. Documentation 
+
+To get a list of the command line options available, run elude with the <code>--help  </code> option.
+
+h2. Example 
+
+Examples of input data for elude are available in bin/data/elude_test/.  The following examples assume that the current directory is bin (the directory including the elude executable).
+
+An example of command to run elude to train a model using the data from train.txt and then use this model to predict retention time for the peptides in test.txt would be: 
+
+<pre><code>$ ./elude -t data/elude_test/standalone/train.txt -e data/elude_test/standalone/test.txt -o elude_predictions.out -v 5 2> elude.log
+</code></pre>
+The file elude_predictions.out will include the predicted retention times for the peptides in test.txt, while the file elude.log will display information about the run. 
+
+An example when elude chooses automatically the most suitable model from the library, uses the data from calibrate.txt to calibrate this model and then employs it to predict retention time for the peptides in test.txt would be: 
+
+<pre><code>./elude -t data/elude_test/calibrate_data/calibrate.txt -e data/elude_test/calibrate_data/test.txt -o elude_predictions.out -w models/ -a -v 5 2> elude.log </code></pre> 
+
+Here the <code>-w</code> options indicates the path to the library (located in bin/models) while  <code>-a</code> indicates that the model should be automatically selected from the library. As before, elude_predictions.out will include the retention times predicted by Elude and elude.log information about the run.
+
+h2. License 
+
+Elude's license is available "here":license
