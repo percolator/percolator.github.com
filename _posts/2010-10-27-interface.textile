@@ -15,7 +15,7 @@ Similarly, Percolator's output (called PUT for Percolator-OUT) is defined by the
 Supposing pin.xml is a valid XML file in PIN format, Percolator can be run using the following options:
 <pre><code>$ percolator [options] -E pin.xml -X output.xml
 </code></pre>
-After a successful termination, output.xml will contain Percolator's output formatted in POUT format; the file will be overwritten, or created if not existing.
+After a successful termination, output.xml will contain Percolator's output formatted in POUT format; the file will be overwritten, or created if not already existing.
 
 
 h2. SQT file format
@@ -23,7 +23,7 @@ h2. SQT file format
 Percolator 1.14 and below accepted "SQT files":http://www.ncbi.nlm.nih.gov/pubmed/15317041 in input; SQT files are the default output of  "Crux":http://noble.gs.washington.edu/proj/crux software toolkit. Although SQT files are not supported directly any more, Percolator is now shipped with a converter program called Sqt2pin available from the "downloads":http://github.com/percolator/percolator/downloads section. Supposing target.sqt and decoy.sqt are two valid SQT files, they can be (merged and) converted into a PIN file by invoking sqt2pin with the following options:
 <pre><code>$ sqt2pin [options] -o output.xml target.sqt decoy.sqt
 </code></pre>
-After a successful termination, output.xml will contain Sqt2pin's output formatted in PIN format; the file will be overwritten, or created if not existing.
+After a successful termination, output.xml will contain Sqt2pin's output formatted in PIN format; the file will be overwritten, or created if not already existing.
 
 Percolator does not support SRF files, which are "Bioworks":http://www.thermo.com/bioworks/ Sequest output files, but those can be converted to SQT files using John Prince's Srf2sqt; it is available at "github":http://github.com/jtprince/ms-sequest. Alternativelyit can be obtained by running "gem":http://rubygems.org/
 <pre><code>$ gem install ms-sequest
@@ -45,7 +45,7 @@ where tab-delimited is a valid Tab-delimited file.
 Supposing pin.xml is a valid XML file in PIN format, it is possible to use Percolator as a converter and generate Tab-delimited files from PIN files by using the following options:
 <pre><code>$ percolator -E pin.xml -J tab-delimited
 </code></pre>
-After a successful termination, tab-delimited will contain a valid Tab-delimited file that can be fed to Percolator through the <code>-j</code> described above; the file will be overwritten, or created if not existing.
+After a successful termination, tab-delimited will contain a valid Tab-delimited file that can be fed to Percolator through the <code>-j</code> described above; the file will be overwritten, or created if not already existing.
 
 h2. Mascot
 
