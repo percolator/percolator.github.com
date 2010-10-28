@@ -4,6 +4,8 @@ title: Interface
 categories: all
 terminal_pres: true
 ---
+
+
 h2. PIN and POUT file formats
 
 Since version 1.15, Percolator has its own input format called PIN (for Percolator-IN). PIN files are XML files whose structure is defined by the schema "percolator_in.xml":http://github.com/percolator/percolator/raw/xml-1-1/src/xml/percolator_in.xsd, (currently at its 1.1 version).
