@@ -4,16 +4,10 @@ title: Example
 categories: all
 terminal_pres: true
 ---
-A series of scripts that execute system tests are shipped with the source code; tu run them, "install":http://github.com/percolator/percolator/download-and-install Percolator and download the latest tar-ball from "downloads":http://github.com/percolator/percolator/downloads. Issue the following commands (a python 2.6 interpreter must be available):
-<pre><code>  $ tar -zxvf percolator[_converters]-v[X]-linux-[ARCH].tar.gz
-  $ cd percolator[_converters]-v[X]-linux-[ARCH]
-  $ python ./data/tests/System_test_[T]
-</code></pre>
-For any test T in the tests subdirectory (some require Sqt2pin to succeed).
 
-Once you have downloaded and extracted the contents of the Percolator tar-ball as explained above, you can also run Percolator manually on the data contained in the data/percolator_test/*.
+A series of scripts that execute system tests are shipped with the source code. To learn more, refer to the section "TEST PERCOLATOR" in the "README file":http://github.com/percolator/percolator/raw/master/README shipped with the source code.
 
-The data sets used in percolators original publication are all available from the Noble lab "web site":http://noble.gs.washington.edu/proj/percolator/. To test Percolator on those, run the command sequence:
+The data sets used in Percolator's original publication are all available from the Noble lab "web site":http://noble.gs.washington.edu/proj/percolator/. To test Percolator on those, run the command sequence:
 <pre><code>
   $ mkdir test; cd test
   $ wget -q http://noble.gs.washington.edu/proj/percolator/data/yeast-01.sqt.tar.gz
@@ -47,9 +41,9 @@ The data sets used in percolators original publication are all available from th
   Iteration 10 : After the iteration step, 11747 target PSMs with q<0.01 were estimated by cross validation
   Obtained weights (only showing weights of first cross validation set)
   first line contains normalized weights, second line the raw weights
-  lnrSp	deltLCn	deltCn	Xcorr	Sp	IonFrac	Mass	PepLen	Charge1	Charge2	Charge3	enzN	enzC	enzInt	lnNumSP	dM	absdM	m0
-  -0.454	0.094	0.586	0.554[2]	-0.044	-0.0211	0.757	-0.647	0.138	0.0316	-0.0599	1.19	1.22	-1.7	-0.0401	0.246	-0.222[3]	-6.23
-  -0.244	0.562	6.71	0.921	-0.000166	-0.13	0.00125	-0.118	1.35	0.0632	-0.12	3.01	2.79	-1.27	-1.29	0.382	-0.601	7.92
+  lnrSp	 deltLCn deltCn	Xcorr	 Sp	   IonFrac Mass	   PepLen Charge1 Charge2 Charge3 enzN enzC enzInt lnNumSP dM	 absdM	   m0
+  -0.454 0.094	 0.586	0.554[2] -0.044	   -0.0211 0.757   -0.647 0.138	  0.0316  -0.0599 1.19 1.22 -1.7   -0.0401 0.246 -0.222[3] -6.23
+  -0.244 0.562	 6.71	0.921	 -0.000166 -0.13   0.00125 -0.118 1.35	  0.0632  -0.12	  3.01 2.79 -1.27  -1.29   0.382 -0.601	   7.92
   After all training done, 11621 target PSMs with q<0.01 were found when measuring on the test set
   Found 11621 target PSMs scoring over 1% FDR level on testset
   Merging results from 3 datasets
