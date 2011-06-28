@@ -13,7 +13,7 @@ The data sets used in Percolator's original publication are all available from t
   $ wget -q http://noble.gs.washington.edu/proj/percolator/data/yeast-01.sqt.tar.gz
   $ tar xvzf yeast-01.sqt.tar.gz
   $ sqt2pin -o pin.xml yeast-01.sqt yeast-01.shuffled.sqt
-  $ percolator -E pin.xml -X pout.xml > yeast-01.psms
+  $ percolator -X pout.xml pin.xml > yeast-01.psms
   Percolator version 1.15, Build Date Oct 21 2010 10:43:31
   Copyright (c) 2006-9 University of Washington. All rights reserved.
   Written by Lukas Käll (lukall@u.washington.edu) in the
@@ -25,20 +25,19 @@ The data sets used in Percolator's original publication are all available from t
   Train/test set contains 69705 positives and 69705 negatives, size ratio=1 and pi0=1
   selecting cpos by cross validation
   selecting cneg by cross validation
-  A
   Estimating 7086 over q=0.01 in initial direction
   Reading in data and feature calculation took 46.96 cpu seconds or 47 seconds wall time
   ---Training with Cpos selected by cross validation, Cneg selected by cross validation, fdr=0.01
-  Iteration 1 : After the iteration step, 10212[1] target PSMs with q<0.01 were estimated by cross validation
-  Iteration 2 : After the iteration step, 11256 target PSMs with q<0.01 were estimated by cross validation
-  Iteration 3 : After the iteration step, 11564 target PSMs with q<0.01 were estimated by cross validation
-  Iteration 4 : After the iteration step, 11667 target PSMs with q<0.01 were estimated by cross validation
-  Iteration 5 : After the iteration step, 11706 target PSMs with q<0.01 were estimated by cross validation
-  Iteration 6 : After the iteration step, 11714 target PSMs with q<0.01 were estimated by cross validation
-  Iteration 7 : After the iteration step, 11716 target PSMs with q<0.01 were estimated by cross validation
-  Iteration 8 : After the iteration step, 11741 target PSMs with q<0.01 were estimated by cross validation
-  Iteration 9 : After the iteration step, 11742 target PSMs with q<0.01 were estimated by cross validation
-  Iteration 10 : After the iteration step, 11747 target PSMs with q<0.01 were estimated by cross validation
+  Iteration 1	: After the iteration step, 10212[1] target PSMs with q<0.01 were estimated by cross validation
+  Iteration 2	: After the iteration step, 11256 target PSMs with q<0.01 were estimated by cross validation
+  Iteration 3	: After the iteration step, 11564 target PSMs with q<0.01 were estimated by cross validation
+  Iteration 4	: After the iteration step, 11667 target PSMs with q<0.01 were estimated by cross validation
+  Iteration 5	: After the iteration step, 11706 target PSMs with q<0.01 were estimated by cross validation
+  Iteration 6	: After the iteration step, 11714 target PSMs with q<0.01 were estimated by cross validation
+  Iteration 7	: After the iteration step, 11716 target PSMs with q<0.01 were estimated by cross validation
+  Iteration 8	: After the iteration step, 11741 target PSMs with q<0.01 were estimated by cross validation
+  Iteration 9	: After the iteration step, 11742 target PSMs with q<0.01 were estimated by cross validation
+  Iteration 10	: After the iteration step, 11747 target PSMs with q<0.01 were estimated by cross validation
   Obtained weights (only showing weights of first cross validation set)
   first line contains normalized weights, second line the raw weights
   lnrSp	 deltLCn deltCn	Xcorr	 Sp	   IonFrac Mass	   PepLen Charge1 Charge2 Charge3 enzN enzC enzInt lnNumSP dM	 absdM	   m0
