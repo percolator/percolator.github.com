@@ -12,13 +12,3 @@ How to:
 * "cite percolator":publications
 
 Percolator's license is described "here":license
-
-Subscribe to percolator-user@googlegroups.com to receive information of new releases of percolator
-
-<div id="subscribe"><form action="http://groups.google.com/group/percolator-user/boxsubscribe">
-
-<table border=0 style="background-color: #fff; padding: 5px;" cellspacing=0>
-
-<tr><td>Email:</td><td><input type=text name=email /></td><td><input type=submit name="sub" value="Subscribe" /></td></tr>
-
-</table></form></div>
