@@ -14,10 +14,11 @@ How to:
 Percolator's license is described "here":license
 
 Subscribe to percolator-user@googlegroups.com to receive information of new releases of percolator
-<pre>
+
+<div id="subscribe">
 <form action="http://groups.google.com/group/percolator-user/boxsubscribe">
 Email
-<input type=text name=email/>
-<input type=submit name="sub" value="Subscribe"/>
+<input type=text name=email />
+<input type=submit name="sub" value="Subscribe" />
 </form>
-</pre>
+</div>
