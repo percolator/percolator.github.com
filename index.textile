@@ -12,3 +12,5 @@ How to:
 * "cite percolator":publications
 
 Percolator's license is described "here":license
+
+We keep an e-mail list "percolator-user@googlegroups.com":http://groups.google.com/group/percolator-user where new releases are announced 
