@@ -18,8 +18,12 @@ Subscribe to percolator-user@googlegroups.com to receive information of new rele
 <div id="subscribe">
 <form action="http://groups.google.com/group/percolator-user/boxsubscribe">
 
-p. Email: <input type=text name=email /><input type=submit name="sub" value="Subscribe" />
-
 h1. just a test
+
+p. Email: 
+
+
+<input type=text name=email /><input type=submit name="sub" value="Subscribe" />
+
 
 </form></div>
