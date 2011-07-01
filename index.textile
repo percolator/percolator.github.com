@@ -20,4 +20,6 @@ Subscribe to percolator-user@googlegroups.com to receive information of new rele
 
 p. Email: <input type=text name=email /><input type=submit name="sub" value="Subscribe" />
 
+h1. just a test
+
 </form></div>
