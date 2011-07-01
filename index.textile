@@ -13,3 +13,4 @@ How to:
 
 Percolator's license is described "here":license
 
+New verions of percolator are anounced on "percolator-user@googlegroups.com":http://groups.google.com/group/percolator-user
